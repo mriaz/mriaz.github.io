@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Muhammad Ahmed Riaz">
+        <meta name="description" content="A personal portfolio of Muhammad Ahmed Riaz">
+        <title>Muhammad Ahmed Riaz</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+        div.date{
+            text-align: left;
+            font-style: italic;
+            margin-bottom: 5px;
+            margin-top: -2px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="" class="brand"></a>
+                </div>
+            </div>
+        </div>
+        <div style="height:20px;"></div>
+        <div class="container">
+        
+        
+        
+             
+            <div class="row-fluid">
+            
+                <!-- LEFT COLUMN STARTS HERE -->
+                <div id="left-column" class="span4">
+                
+                    <!-- PROFILE PICTURE -->
+                    <div class="row-fluid">
+                        <!-- IMAGE LINK HERE IN src attribute-->
+                        <img data-src="holder.js/200x200/index.html" src="images/display_pic.jpeg" alt="">
+                    </div>
+                    
+                    <!-- PERSONAL DETAILS -->
+                    <div class="row-fluid">
+                        <h3 class="text-center">Muhammad Ahmed Riaz</h3>
+                        I am interested in machine learning, computer vision, 3D reconstruction, augmented reality.
+                        </br></br>
+                        <!-- Education and job -->
+                        <div class="well">
+                            <strong>Apple Inc.</strong></br>
+                            Machine Learning Engineer
+                            </br>
+                            2016 - present
+                            </br>
+                            </br>
+                            <strong>University of California, San Diego</strong></br>
+                            MS Computer Science
+                            </br>
+                            2014 - 2016
+                        </div>
+
+                        <!-- Contact details -->
+                        <div class="well">                        
+                            <i class="icon-map-marker"></i>
+                                SF Bay Area, CA
+                            </br>
+                            <i class="icon-envelope"></i> 
+                                mahmadriaz{at}gmail{dot}com
+                            </br>
+                            <i class="icon-user"></i> 
+                            <a href="https://www.linkedin.com/in/muhammad-ahmed-riaz-08a41237">LinkedIn</a>, <a href="documents/resume.pdf">resum&eacute</a></br>
+                        </div>
+                    </div>
+                </div>
+                <!-- LEFT COLUMN ENDS HERE -->
+                
+                <!-- RIGHT COLUMN STARTS HERE -->
+                <div id="right-column" class="span8">
+                    <!--SECTION WITH PROJECTS TYPE HEADING STARTS HERE-->
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <h3>Computer Vision and Grahpics Academic Projects</h3>
+                        </div>
+                    </div>
+                    <!--SECTION WITH PROJECTS TYPE HEADING ENDS HERE-->
+
+
+                    <!--SECTION WITH TWO COLUMNS STARTS HERE WITH IMAGES AT LEFT-->
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <img src="images/svr.jpeg"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Single View, 3D Face Reconstruction</h4>
+                            <div class="date">April '15 - August '16</div>
+                            <p>
+                                Implemented a fully automatic, state of the art single view reconstruction system for human faces. The reconstruction is achieved by decomposing the image into its intrinsic components namely diffuse, specular, albedo and lighting. A realistic shading model is used in the process which includes effects like subsurface scattering and specular highlights . We were able to get a high quality reconstruction and capture features like small wrinkles and pimples.</br>
+                                <a href="documents/ms_proj_report.pdf">Report</a>, <a href="images/3D_face_phong2.mp4">Video</a>, <a href="documents/ms_poster.pdf">Poster</a>
+                            </p>
+                        </div>
+                    </div>
+                    </br>
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4" style="margin-top: 0pt;">
+                            <h4> </h4>
+                            <img src="images/prt1.png"/>
+                            <img src="images/prt2.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>PRE-COMPUTED RADIANCE TRANSFER SYSTEM BASED ON SPHERICAL HARMONICS</h4>
+                            <div class="date">Winter '15</div>
+                            <p>
+                                A real-time rendering system for Lambertian and glossy surfaces. The system
+                                is capable of handling soft shadows and radiance self-transfer under dynamic environment lighting. In order to achieve real-time rendering, we use a representation which captures an object's response to distant illumination. The response signal, being pre-computed and stored densely over the surface of the object, encodes how light from the environment is redistributed by the geometry into exitance radiance. At run-time, we apply the response to a parameterized environment radiance map, and obtain the transferred radiance over the object surface. The computation is done under spherical harmonic basis for enhanced performance. This allows us to switch between different environment maps and rigidly rotate objects with full global illumination effects without substantial computational overhead.</br>
+                                
+                                <a href="documents/PRT_report.pdf">Report</a>,
+                                <a href="images/PRT_demo.mp4">Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    </br>
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/sfar3.png"/>
+                            <img src="images/sfar4.png"/>
+                            <img src="images/sfar2.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Shape from Angle Regularity(SVR)</h4>
+                            <div class="date">Jun '12 - Aug '14</div>
+                            <p>
+                                Single View Reconstruction is an ill-posed problem in general as the objective is to recover 3D structure of world form a single 2D image. Several cues are used to impose extra constraints of the world to recover feasible structure. My research group proposed a new cue to recover 3D man-made structure due to the abundance of orthognal angles in such scenareos. This is known as shape from angle regularity.</br>
+                                I worked on improvement of SfAR (Shape from Angle regularity). I devised a restriction on search space for the core optimization involved, resulting in improved stability. </br>
+                                Reference: </br>
+                                Zaheer, A., Rashid, M., Riaz, M. A., & Khan, S. (2018).</br>
+                                <a href="documents/svr.pdf"> Single-View Reconstruction using orthogonal line-pairs. </a></br>
+                                Computer Vision and Image Understanding, 172, 107-123.
+                            </p>
+                        </div>
+                    </div>
+                    </br>
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4"></div>
+                        <div class="span8">
+                            <h4>Convolutional Neural Networks</h4>
+                            <div class="date">Spring '15</div>
+                        </div>
+
+                        <div class="span12">
+                            <div class="span4">
+                                <img src="images/mnistExamples.png"/>
+                            </div>
+                            <div class="span8">
+                                <img src="images/cnn.png" align="center" />
+                            </div>
+                        </div>
+
+                        <div class="span12">
+                            <p>
+                                This project explores the application of convolutional neural networks to multiclass classification, specifically, in the classification of handwritten digits in the MNIST dataset. We present a simple to use reconfigurable architecture for developing a convolutional neural network model. We evaluate the performance of some of these architectures/models on the MNIST dataset. Interestingly, we discover that the max pooling marginally improves accuracy and that the network architecture has a significant impact on the iteration profile. We report an accuracy of greater than 91% on the test data classification of the MNIST images.
+                                </br><a href="documents/CSE-291-PA4-%5BDave_Riaz_Kinkade%5D.pdf">Report</a>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    </br>
+                    </br>
+                    
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/expression1.png"/>
+                            <img src="images/expression2.png"/>
+                            <img src="images/expression4.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>3D-character Expression Retargeting</h4>
+                            <div class="date">Fall '12</div>
+                            <p>
+                                Given sparse MoCap data of an actor's faceial expression, the goal of this project was to retarget those expressions onto a dense point cloud of another character. We computed the spatio-temporal basis to retarget this information from one character to another. This basis model exploits the fact that this data is highly sparse and any possible expression can pe synthesized as a linear combination of very few basis vectors. </br>
+                                We also tried to compute the basis of 3D character automatically in which we failed. To overcome this problem, we provide a tool to manually generate these basis given the point cloud of the mean pose.</br>
+                                <a href="documents/expression_retargetting_report.pdf">Report</a>
+                                </br>
+                                (This project was based on</br>
+                                Ijaz Akhter, T. Simon, S. Khan, I. Matthews, Y. Sheikh.</br>
+                                <a href="http://cvlab.lums.edu.pk/wp-content/uploads/2012/08/ToG.Bilinear.2012.pdf">Bilinear Spatiotemporal Basis Models</a>.</br>
+                                ACM Transactions on Graphics (TOG), Vol 31(2), No. 17, April 2012.)
+                            </p>
+                        </div>
+                    </div>
+
+                    </br>
+
+
+                    <hr>
+
+                    <!--SECTION WITH PROJECTS TYPE HEADING STARTS HERE-->
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <h3>Professional Projects</h3>
+                        </div>
+                    </div>
+                    <!--SECTION WITH PROJECTS TYPE HEADING ENDS HERE-->
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/stabilization_thumbnail.gif"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Video Stabilization</h4>
+                            <div class="date">Jan - Jun '14</div>
+                            <p>
+                                Working at <b>Multi-core Systems Pakistan</b>, I designed a complete video stabilization system, removing jitter from hand held camera videos while preserving the smooth camera motion. The stabilization was achieved using global flow to compute affine tranforms between frames and low-pass filtered to allow smooth camera motion. Experimentation was done to choose between sparse vs dense flow, and affine vs perspective transform.</br>
+                                The sample input output video can be by the link bellow:</br>
+                                <a href="images/stabilization.mp4">Video</a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+
+
+                    <!--SECTION WITH PROJECTS TYPE HEADING STARTS HERE-->
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <h3>Other Undergraduate Projects</h3>
+                        </div>
+                    </div>
+                    <!--SECTION WITH PROJECTS TYPE HEADING ENDS HERE-->
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/speech_wave.png"/>
+                            <img src="images/speech_bin.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Speech Recognition</h4>
+                            <div class="date">Winter '08</div>
+                            <p>
+                                In my freshman year, I did a project on speech recognition. The goal of the project was to make a voice command controlled application that lets its users perform various tasks on computer solely through voice commands. The program was able to distinguish between a vocabulary of 20 words. User was given with functionality to build their word libraries as well. Word recoginition was achienved by dividing the speach into small time steps and at each time step, the energy stored in small ranges of frequency were used as features. 
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/plotter.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Generic Function Plotter</h4>
+                            <div class="date">Fall '09</div>
+                            <p>
+                                As a sophomore year student, I developed a function plotting tool in C++. This tool has a user friendly GUI and is able to parse a generic multi-variable function expression and plot its surface in reasonable axis limits. The program has a variety of controls like plot quality and polar/cartesian coordinates. </br>
+                                <a href="documents/function_plotter.pdf">Report</a>, <a href="images/Function_Plotter.avi"> Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/microprocessor.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Micro-processor design</h4>
+                            <div class="date">Fall '10</div>
+                            <p>
+                                For Computer Organization course, we designed and fabricated a 16-bit microprocessor which could be programmed into assembly language by plugging in burnt ROMS. The micro-processor was able to perform complex functionality due to its ability to accomodate user defined functions inside the assembly.</br>
+                                <a href="documents/EE_320_report.pdf">Report</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/sproj.jpg"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Pure-sine wave power inverter</h4>
+                            <div class="date">Summer '11 - Spring '12</div>
+                            <p>
+                                As a senior year project, I designed a low-cost, highy-efficiency power inverter. The designed inverter has a pure sine-wave output waveform, unlike many commercial products which generate modified sine-wave. This modified sine-wave is not only less efficient, but can also damage some of the electronics not designed to be run by low quality input current.</br>
+                                <a href="documents/SPROJ_Final_report.pdf">Report</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src=""/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Magnetic Levitation</h4>
+                            <p>
+                                Some Magnetic Levitation project.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                     comment -->
+
+                    <div class="row-fluid">
+                        
+                        <div class="span4">
+                            <h4> </h4>
+                            <img src="images/rfid.png"/>
+                        </div>
+                        
+                        <div class="span8">
+                            <h4>Radio Frequency Identification, Antenna Design</h4>
+                            <div class="date">Summer '10</div>
+                            <p>
+                                For a summer intership, I explored the RFID system deisgn. My main focus was to design the antennas for such systems, operating at 125 kHz (long wave). For this purpose I used a simulation tool named High Frequency Structure Simulator (HFSS).</br>
+                                <a href="documents/RFID_ANTENNA_DESIGN_AND_SIMULATION.pdf">Report</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--SECTION WITH TWO COLUMNS ENDS HERE  WITH IMAGES AT LEFT-->
+                </div>
+                <!-- RIGHT COLUMN ENDS HERE -->
+                
+            </div>
+        </div>
+
+    </body>
+</html>
+<!-- Localized -->
